@@ -6,4 +6,3 @@ def foot():
 
 if __name__ =='__main__':
     appe.run(debug=True)
-    #ergerg
