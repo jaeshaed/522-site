@@ -1,8 +1,25 @@
-<div class="cards">
-    <a href="#" class="card">
-      <div class="card-background"
-      style="background-image: url
-      ('images/C:\Users\300-2\522-site\templates\chapka.jpg')">
-      </div>
-    </a>
-</div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блюр изображения</title>
+    <style>
+        .blurred {
+            filter: blur(3px); /* Уровень размытия */
+            transition: filter 0.5s; /* Плавный переход */
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="chapka.jpg" alt="Пример изображения" width="300">
+    <button onmouseover="toggleBlur()">Переключить блюр</button>
+
+    <script>
+        function toggleBlur() {
+            const image = document.getElementById('myImage');
+            image.classList.toggle('blurred');
+        }
+    </script>
+</body>
+</html>
