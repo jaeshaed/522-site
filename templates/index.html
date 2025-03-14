@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин</title>
+    <style>
+        .product-card {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            float: left; /* Для отображения карточек в ряд */
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Наши товары</h1>
+    {% for product in products %}
+        <div class="product-card">
+            <img src="negr.jfif" alt="шапка" class="negr.jfif" width = "100%">
+            <h2>ШАПКА</h2>
+            <p>Цена: 10.99 руб.</p>
+            <p>Теплая,нигерская</p>
+            <button>Подробнее</button> </div>
+    {% endfor %}
+</body>
+</html>
+
+<head>
+    <title>Магазин</title>
+    <style>
+        .product-card {
+            width: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            float: left; /* Для отображения карточек в ряд */
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Наши товары</h1>
+    {% for product in products %}
+        <div class="product-card">
+            <img src="negr 2.jfif" alt="" class="negr 2.jfif" width = "100%">
+            <h2>футболка</h2>
+            <p>Цена: 25.50 руб.</p>
+            <p>продаю,футболка в подарок</p>
+            <button>Подробнее</button> </div>
+    {% endfor %}
+</body>
+</html>
