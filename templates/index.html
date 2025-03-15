@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>futer</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        
+        .button-link {
+            display: block; 
+            width: 100%;
+            padding: 15px 20px;
+            background-color: #007bff; 
+            color: rgb(255, 255, 255); 
+            text-align: left; 
+            text-decoration: none; 
+            border-radius: 5px; 
+            font-size: 16px;
+            margin-bottom: 10px; 
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3; 
+        }
+
+        .accordion-button {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+        }
+
+        .accordion-item {
+            margin-bottom: 15px;
+        }
+
+        .footer-container {
+            padding: 20px;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    {% include 'footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* выравнивание */
+.footer-container {
+    padding: 0;
+}
+
+/* -отстп и ставка ширин */
+.accordion-item {
+    width: 100%; 
+    margin: 0 !important; 
+    padding: 0 !important; 
+    border: none !important; 
+}
+
+.accordion-button {
+    display: block;
+    width: 100%; /* вс длина кнопки */
+    max-width: 800px; 
+    margin: 0 auto; 
+    text-align: left;
+    padding: 5px 10px;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+    font-weight: bold; 
+    position: relative; 
+}
+
+
+.accordion-button::after {
+    content: "＋"; 
+    font-size: 1.2em; 
+    font-weight: bold;
+    position: absolute;
+    right: 10px; 
+    top: 30%;
+    transform: translateY(-50%); 
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: "-"; /* после раскр станет - */
+}
+
+/* Содержимое кнопк */
+
+
+.accordion-button:not(.collapsed) {
+    border-radius: 0; 
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-collapse {
+    margin: 0 !important; 
+    padding: 0 !important;
+    border: none !important; 
+}
+
+.footer .accordion-item {
+    margin-bottom: 0 !important; 
+}
+
+.footer .accordion-header {
+    margin-bottom: 0 !important; 
+}
+
+.footer .accordion-button {
+    margin-bottom: 0 !important; 
+    padding: 5px 10px; 
+}
+
+.footer .accordion-collapse {
+    margin-top: 0 !important; 
+}
+
+.footer .accordion-body {
+    padding: 5px 10px !important; 
+}
