@@ -11,6 +11,12 @@
     border: none !important; 
 }
 
+body {
+    background-image: url('images/ss.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 .accordion-button {
     display: block;
     width: 100%; /* вс длина кнопки */
