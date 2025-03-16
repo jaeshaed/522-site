@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>1 версия</title>
+    <style>
+        #text {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="topen()">Контакты</button>
+
+    <div id="text">
+        +7 987 402 8602 - Рианчик_гроза_90-х
+        <button onclick="tclose()">Закрыть</button>
+    </div>
+
+    <script>
+        function topenv() {
+            if (text.style.display === "none") {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+
+        function tclose() {
+            text.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
